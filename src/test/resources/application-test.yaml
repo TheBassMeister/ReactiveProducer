@@ -1,0 +1,8 @@
+spring:
+  r2dbc:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  jpa:
+    hibernate:
+      ddl-auto: create
+  liquibase:
+    change-log: classpath:db/changelog/master.yaml
